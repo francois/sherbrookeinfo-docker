@@ -20,3 +20,5 @@ This repository is my work in progress to present Docker at the October 21st 201
 5. `docker run -e REDIS_URL=redis://$(hostname -i):${RPORT}/0 -i -t ${IMAGE_ID} )`
 7. `sudo iptables -t nat -A PREROUTING -p tcp --dport 6379 -j REDIRECT --to-port`
 8. `sudo iptables -t nat -A PREROUTING -p tcp --dport 81 -j REDIRECT --to-port`
+
+Host: ec2-54-237-59-117.compute-1.amazonaws.com
