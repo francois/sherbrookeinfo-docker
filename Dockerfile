@@ -15,4 +15,4 @@ ADD . /var/www/
 RUN cd /var/www && bundle install
 
 EXPOSE 3000
-ENTRYPOINT cd /var/www && /usr/bin/env RUBYOPT=-Ilib bundle exec thin start -e production -R rackup.ru
+ENTRYPOINT cd /var/www && /usr/bin/env RUBYOPT=-Ilib bundle exec thin start -R rackup.ru
