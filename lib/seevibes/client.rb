@@ -17,7 +17,7 @@ module Seevibes
     # get "/remember" do
     #   count = redis.incr params[:name]
     #   count.times.map do |index|
-    #     "#{params[:name]} was seen #{index + 1} time#{index.nonzero? "s" : ""}!"
+    #     "#{params[:name]} was seen #{index + 1} time#{index.nonzero? ? "s" : ""}!"
     #   end.join("<br>")
     # end
 
